@@ -18,11 +18,12 @@ import java.util.ArrayList;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class NewOrderFragment extends Fragment {
+public class OnGoingOrder_Fragment extends Fragment {
 
-RecyclerView recycler_new_order;
-RecyclerView.LayoutManager layoutManagernew;
-    public NewOrderFragment() {
+    RecyclerView recycler_ongoing_order;
+    RecyclerView.LayoutManager layoutManager;
+
+    public OnGoingOrder_Fragment() {
         // Required empty public constructor
     }
 
@@ -31,14 +32,12 @@ RecyclerView.LayoutManager layoutManagernew;
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-       View view= inflater.inflate(R.layout.fragment_new_order, container, false);
+        View view= inflater.inflate(R.layout.fragment_on_going_order_, container, false);
 
+        recycler_ongoing_order=view.findViewById(R.id.recycler_ongoing_order);
+        layoutManager=new LinearLayoutManager(getContext());
 
-       recycler_new_order=view.findViewById(R.id.recycler_new_order);
-        layoutManagernew=new LinearLayoutManager(getContext());
-
-        recycler_new_order.setLayoutManager(layoutManagernew);
-
+        recycler_ongoing_order.setLayoutManager(layoutManager);
 
         ArrayList<ModelRecyclerNewOreder> order =new ArrayList<>();
 
@@ -48,12 +47,12 @@ RecyclerView.LayoutManager layoutManagernew;
         order.add(new ModelRecyclerNewOreder("prakash",R.drawable.cheers));
         order.add(new ModelRecyclerNewOreder("vinod",R.drawable.cheers));
 
-        NewOrderAdapter apdapt=new NewOrderAdapter(order);
+        OnGoingOrderAdapter apdapt=new OnGoingOrderAdapter(order);
 
 
-        recycler_new_order.setAdapter(apdapt);
+        recycler_ongoing_order.setAdapter(apdapt);
 
-       return view;
+        return view;
     }
 
 }

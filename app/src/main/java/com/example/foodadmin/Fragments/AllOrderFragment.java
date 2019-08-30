@@ -48,7 +48,8 @@ TabLayout tablayout_allorder;
         Vpadapter asd=new Vpadapter(getFragmentManager());
 
         asd.Addfg(new NewOrderFragment(),"New order");
-        asd.Addfg(new OngoingOrderFragment(),"Ongoing order");
+        asd.Addfg(new OnGoingOrder_Fragment(),"Ongoing order");
+        asd.Addfg(new PastOrderFragment(),"past order");
         viewpager_allorder.setAdapter(asd);
         return view;
     }
