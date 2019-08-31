@@ -5,6 +5,7 @@
     <shape android:shape="rectangle">
         <stroke android:color="@color/colorRed" android:width="2dp">
         </stroke>
+
         <corners android:radius="2dp"/>
     </shape>
 

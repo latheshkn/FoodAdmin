@@ -22,6 +22,10 @@ public class HomePageActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
 
+        Fragment fragment =new MenuFragment();
+        FragmentTransaction ts=getSupportFragmentManager().beginTransaction();
+        ts.replace(R.id.frame,fragment);
+        ts.commit();
         bottom_navigation=findViewById(R.id.bottom_navigation);
 
 //        to add the customised icons to the navigation bar
