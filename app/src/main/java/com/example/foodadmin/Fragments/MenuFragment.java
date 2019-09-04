@@ -53,13 +53,13 @@ public class MenuFragment extends Fragment {
 
         ArrayList<ModelRecyclerMenu> order =new ArrayList<>();
 
-        order.add(new ModelRecyclerMenu("Roti","150",R.drawable.cheers));
-        order.add(new ModelRecyclerMenu("Roti","150",R.drawable.cheers));
-        order.add(new ModelRecyclerMenu("Roti","150",R.drawable.cheers));
-        order.add(new ModelRecyclerMenu("Roti","150",R.drawable.cheers));
-        order.add(new ModelRecyclerMenu("Roti","150",R.drawable.cheers));
-        order.add(new ModelRecyclerMenu("Roti","150",R.drawable.cheers));
-        order.add(new ModelRecyclerMenu("Roti","150",R.drawable.cheers));
+        order.add(new ModelRecyclerMenu("Roti","150",R.drawable.food));
+        order.add(new ModelRecyclerMenu("Roti","150",R.drawable.food));
+        order.add(new ModelRecyclerMenu("Roti","150",R.drawable.food));
+        order.add(new ModelRecyclerMenu("Roti","150",R.drawable.food));
+        order.add(new ModelRecyclerMenu("Roti","150",R.drawable.food));
+        order.add(new ModelRecyclerMenu("Roti","150",R.drawable.food));
+        order.add(new ModelRecyclerMenu("Roti","150",R.drawable.food));
 
 
         MenuAdapter apdapt=new MenuAdapter(order);

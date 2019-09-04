@@ -2,8 +2,11 @@ package com.example.foodadmin.Acvtivities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.LinearLayout;
 
 import com.example.foodadmin.R;
 import com.smarteist.autoimageslider.IndicatorAnimations;
@@ -13,6 +16,7 @@ import com.smarteist.autoimageslider.SliderView;
 public class MainActivity extends AppCompatActivity {
 
     SliderView imageSlider;
+    LinearLayout linearlogin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-
+        linearlogin=findViewById(R.id.linearlogin);
 
 
 
@@ -38,7 +42,13 @@ public class MainActivity extends AppCompatActivity {
         imageSlider.setScrollTimeInSec(2);
         imageSlider.startAutoCycle();
 
-
+        linearlogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MainActivity.this,VerifyMobileActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 }

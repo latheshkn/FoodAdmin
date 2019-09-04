@@ -13,7 +13,7 @@
     </item>
 
     <item android:title="NOTIFICATION"
-        android:id="@+id/profile"
+        android:id="@+id/notification"
         android:icon="@drawable/user">
     </item>
 

@@ -42,11 +42,11 @@ RecyclerView.LayoutManager layoutManagernew;
 
         ArrayList<ModelRecyclerNewOreder> order =new ArrayList<>();
 
-        order.add(new ModelRecyclerNewOreder("lathesh",R.drawable.fried));
-        order.add(new ModelRecyclerNewOreder("manjunath",R.drawable.cheers));
-        order.add(new ModelRecyclerNewOreder("pannkaj",R.drawable.cheers));
-        order.add(new ModelRecyclerNewOreder("prakash",R.drawable.cheers));
-        order.add(new ModelRecyclerNewOreder("vinod",R.drawable.cheers));
+        order.add(new ModelRecyclerNewOreder("lathesh",R.drawable.food));
+        order.add(new ModelRecyclerNewOreder("manjunath",R.drawable.food));
+        order.add(new ModelRecyclerNewOreder("pannkaj",R.drawable.food));
+        order.add(new ModelRecyclerNewOreder("prakash",R.drawable.food));
+        order.add(new ModelRecyclerNewOreder("vinod",R.drawable.food));
 
         NewOrderAdapter apdapt=new NewOrderAdapter(order);
 

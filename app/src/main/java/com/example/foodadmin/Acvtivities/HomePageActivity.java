@@ -10,6 +10,7 @@ import android.view.MenuItem;
 
 import com.example.foodadmin.Fragments.AllOrderFragment;
 import com.example.foodadmin.Fragments.MenuFragment;
+import com.example.foodadmin.Fragments.NotificationFragment;
 import com.example.foodadmin.Fragments.ProfileFragment;
 import com.example.foodadmin.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -38,9 +39,9 @@ public class HomePageActivity extends AppCompatActivity {
 
                         int id= item.getItemId();
                         Fragment fragment=null;
-                       if (id==R.id.profile){
+                       if (id==R.id.notification){
 
-                           fragment =new ProfileFragment();
+                           fragment =new NotificationFragment();
                        }
                        if (id==R.id.menu){
                            fragment=new MenuFragment();
@@ -48,6 +49,9 @@ public class HomePageActivity extends AppCompatActivity {
                        if (id==R.id.order){
                            fragment=new AllOrderFragment();
                        }
+                        if (id==R.id.setting){
+                            fragment=new ProfileFragment();
+                        }
 
                        if (fragment!=null){
 
